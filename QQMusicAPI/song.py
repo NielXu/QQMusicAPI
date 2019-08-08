@@ -80,6 +80,8 @@ class Song(object):
 
         self.name = data.get('track_info').get('name')
         self.title = data.get('track_info').get('title')
+        self.album_name = data.get('track_info').get('album').get('name')
+        self.album_title = data.get('track_info').get('album').get('title')
         self.extras_name = data.get('extras').get('name')
         self.subtitle = data.get('extras').get('subtitle')
         self.transname = data.get('extras').get('transname')
