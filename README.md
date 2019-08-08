@@ -1,5 +1,5 @@
 # QQMusicAPI
-[![Build Status](https://travis-ci.org/NielXu/QQMusicAPI.svg?branch=master)](https://travis-ci.org/NielXu/QQMusicAPI)
+[![Build Status](https://travis-ci.com/NielXu/QQMusicAPI.svg?branch=master)](https://travis-ci.org/NielXu/QQMusicAPI)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MeiK-h/QQMusicAPI.svg)
 
 [Document in Chinese version](https://github.com/NielXu/QQMusicAPI/blob/master/README-zh.md)
