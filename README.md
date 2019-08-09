@@ -4,6 +4,69 @@
 
 [Document in Chinese version](https://github.com/NielXu/QQMusicAPI/blob/master/README-zh.md)
 
+## CLI
+This will get song information and list 3 best matched songs by default:
+```bash
+python cli.py "someone like you"
+
+Search key: <someone like you>
+================================================
+Matched songs: 501
+================================================
+Best matched(3):
+[1]
+	Name:		Someone Like You
+	Title:		Someone Like You
+	Album Name:	21
+	Album Title:	21
+	Singer:		Adele
+	URL:		http://dl.stream.qqmusic.qq.com/C400000gtopG1e7HB2.m4a?vkey=5A8298AEC4A8DB4AA87CB666B6E864D0BBC8129DFBC59A1861AFC86ED192539EEF24CD12769DBE33379069D28BCB0CFD3DD4C022737604A6&guid=5597236354&fromtag=30
+[2]
+	Name:		Someone Like You
+	Title:		Someone Like You
+	Album Name:	Someone Like You
+	Album Title:	Someone Like You
+	Singer:		Troye Sivan
+	URL:		http://dl.stream.qqmusic.qq.com/C400003OgzsU40oUKz.m4a?vkey=F71AA854F329E70B340120E0424E104653EB6047DD889340DE5E5DB9E3031147CA06F3F2AEB11ACAD718404603A72B795AD88CFAC5D2BCF6&guid=2129462942&fromtag=30
+[3]
+	Name:		Someone like you
+	Title:		Someone like you (Live)
+	Album Name:	
+	Album Title:	
+	Singer:		宋雨琦
+	URL:		http://dl.stream.qqmusic.qq.com/C400001WkrFs1SCMkk.m4a?vkey=24784EDB45A5349941E95C386F95808286A86637C745162F5CBF267FFEEFB845D8877465537257BBA6C4E61FA04D15B86861D9110D8B2F5C&guid=9519992987&fromtag=30
+```
+To play the song and open it in the default browser, enable `-p` or `--play`. The input number will be the number on the matched list, enter `q` to exit:
+```bash
+python cli.py "someone like you" -p
+
+Play(enter q to quit): 1
+Now playing(1):
+	Name:		Someone Like You
+	Title:		Someone Like You
+	Album Name:	21
+	Album Title:	21
+	Singer:		Adele
+	URL:		http://dl.stream.qqmusic.qq.com/C400000gtopG1e7HB2.m4a?vkey=DE78558DDD677ED2553AEE0F0114011C84E3755269C4194207EA24A6BB97BE2088F1EE77F546B224E9E8CBCC1EF85C2EC0FFDFB95116BBC6&guid=7140728143&fromtag=30
+```
+Help information:
+```bash
+python cli.py -h
+
+usage: cli.py [-h] [-p] [-t TOP] [-b] song name or keyword
+
+Search for musics or play them in your browser using QQMusic
+
+positional arguments:
+  song name or keyword  Search for a song on QQMusic
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p, --play            Play the best matched song
+  -t TOP, --top TOP     Show the given number of songs that are best matched
+  -b, --best            Play the best matched song
+```
+
 ## Support
 
 This program is developed on python 3.6.7 and can only guarantee it runs in this version. Also tested on the following versions(Cannot gurantee all functions work on these versions):
