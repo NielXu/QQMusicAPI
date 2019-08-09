@@ -12,7 +12,7 @@ if __name__ == "__main__":
         help="Search for a song on QQMusic",
         metavar="song name or keyword")
     parser.add_argument("-p", "--play",
-        help="Play the best matched song",
+        help="Play the song by index",
         action="store_true")
     parser.add_argument("-t", "--top",
         help="Show the given number of songs that are best matched",

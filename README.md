@@ -62,7 +62,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  -p, --play            Play the best matched song
+  -p, --play            Play the song by index
   -t TOP, --top TOP     Show the given number of songs that are best matched
   -b, --best            Play the best matched song
 ```
